@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link id="css-var" rel="stylesheet" type="text/css" href="var.css" />
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<title id="head-title">Home</title>
+	</head>
+	<body>
+		<div class="search-engine">
+			<form id="search-form" class="search-form" method="GET" action="">
+				<!-- Changer la valeur de action en javascript selon le moteur de recherche choisi -->
+				<input id="search-bar-input" class="search-bar" type="text" name="q" value="What's on your mind ?" placeholder="" autocomplete="off" onfocusin="searchBar('in')" onfocusout="searchBar('out')" />
+
+				<!-- Rajouter ces input seulement si c'est Qwant de choisi -->
+				<input class="qwant-hidden-input" type="hidden" value="1" name="i" /> <!-- Affichage des favicons -->
+				<input class="qwant-hidden-input" type="hidden" value="0" name="b" /> <!-- Ouverture des liens dans un nouvel onglet -->
+				<input class="qwant-hidden-input" type="hidden" value="1" name="a" /> <!-- Affichage des suggestions de recherche -->
+				<input class="qwant-hidden-input" type="hidden" value="1" name="h" /> <!-- Affichage de la recherche sur la page web -->
+
+				<br />
+				<!-- Changer la valeur de name en javascript selon le moteur de recherche choisi -->
+				<input value="Let's search !" class="submit-button" type="submit" />
+			</form>
+			<span id="settings-link" class="settings-link" onclick="openSettings()">Settings</span>
+		</div>
+
+		<div id="div-settings" class="settings">
+			<span>Search engine : </span>
+			<br />
+			<select class="select-settings" id="selectSearchEngine" onchange="settingsUpdate(this)">
+				<option class="class-searchEngine" value="qwant">Qwant</option>
+				<option class="class-searchEngine" value="duckduckgo">DuckDuckGo</option>
+				<option class="class-searchEngine" value="google">Google</option>
+			</select>
+
+			<br />
+
+			<span>Theme : </span>
+			<br />
+			<select class="select-settings" id="selectTheme" onchange="settingsUpdate(this)">
+				<option class="class-theme" value="light">Light</option>
+				<option class="class-theme" value="dark">Dark</option>
+				<option class="class-theme" value="black">Black</option>
+			</select>
+
+			<br />
+
+			<span class="reset-link" onclick="reset()">Reset settings</span>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

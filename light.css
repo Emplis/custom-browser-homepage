@@ -1,0 +1,14 @@
+/*
+
+
+Définition des variables pour le theme light
+
+
+*/
+
+:root
+{
+	--main-bg-color: #ecf0f1;
+  --accent-color: #bfccd0;
+  --text-color: #B2BECE;
+}

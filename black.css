@@ -1,0 +1,14 @@
+/*
+
+
+Définition des variables pour le theme black
+
+
+*/
+
+:root
+{
+	--main-bg-color: #000000;
+	--accent-color: #87877f;
+	--text-color: #ecf0f1;
+}

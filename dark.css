@@ -1,0 +1,14 @@
+/*
+
+
+Définition des variables pour le theme dark
+
+
+*/
+
+:root
+{
+	--main-bg-color: #2f3236;
+	--accent-color: #737f8d;
+	--text-color: #dadddf;
+}

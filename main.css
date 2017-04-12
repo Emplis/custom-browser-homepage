@@ -1,0 +1,84 @@
+@font-face
+{
+	font-family: Roboto;
+	src: url(fonts/Roboto-Regular.ttf);
+}
+
+@media only screen and (max-width: 360px)
+{
+	body
+	{
+		background-color: var(--main-bg-color);
+	}
+
+	.search-engine
+	{
+		padding-top: 40%;
+		text-align: center;
+	}
+
+	.search-bar
+	{
+		width: 70%;
+		height: 30px;
+		background-color: var(--main-bg-color);
+		border: solid var(--accent-color);
+		border-width: 0px 0px 2px 0px;
+		transition: width 0.3s ease-in-out;
+		color: var(--text-color);
+		font-size: 1em;
+		font-family: Roboto;
+		outline: none;
+	}
+
+	.search-bar:focus
+	{
+		width: 90%;
+	}
+
+	.submit-button
+	{
+		margin-top: 20px;
+		width: 65%;
+		height: 30px;
+		background-color: var(--main-bg-color);
+		border: 2px solid var(--accent-color);
+		color: var(--text-color);
+		font-size: 0.9em;
+		font-family: Roboto;
+		outline: none;
+	}
+
+	.settings-link
+	{
+		font-size: 0.6em;
+		font-family: Roboto;
+		color: var(--text-color);
+	}
+
+	#div-settings
+	{
+		color: var(--text-color);
+		font-family: Roboto;
+		font-size: 0.9em;
+		text-align: center;
+		display: none;
+	}
+
+	.select-settings
+	{
+		width: 65%;
+		height: 30px;
+		color: var(--text-color);
+		background-color: var(--main-bg-color);
+		border: 2px solid var(--accent-color);
+		outline: none;
+	}
+
+	.reset-link
+	{
+		font-size: 0.6em;
+		font-family: Roboto;
+		color: var(--text-color);
+	}
+}
